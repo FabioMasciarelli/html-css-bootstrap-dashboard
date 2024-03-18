@@ -21,7 +21,7 @@
 
 <body>
 
-    <header class="d-block d-sm-none">
+    <header class="d-block d-md-none">
         <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
             <!-- Container -->
             <div class="container">
@@ -29,9 +29,8 @@
                 <a class="navbar-brand" href="#">BOOTSTRAP DASHBOARD</a>
 
                 <!-- Hamburger button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="navbarNav" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarNav"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
@@ -41,7 +40,7 @@
     <div class="container-fluid">
         <div class="row">
             <!-- Sidebar -->
-            <div class="sidebar col-sm-4 col-lg-3 d-none d-sm-inline bg-dark vh-100" id="navbarNav">
+            <div class="sidebar col-sm-4 col-lg-3 d-none d-md-block bg-dark min-vh-100" id="navbarNav">
                 <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto  text-white text-decoration-none">
                     <svg class="bi pe-none me-2" width="40" height="32">
                         <use xlink:href="#bootstrap"></use>
@@ -94,8 +93,9 @@
                 <hr />
                 <div class="dropdown">
                     <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle p-3 "
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="https://github.com/mdo.png" alt="" width="32" height="32"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-controls="navbarNav"
+                        aria-label="Toggle navigation">
+                        <img src="https://github.com/mdo.png" alt="" width="35" height="35"
                             class="rounded-circle me-2" />
                         <strong>Pippo</strong>
                     </a>
@@ -110,7 +110,7 @@
                 </div>
             </div>
             <!-- MAIN -->
-            <main class="col-sm-8 col-lg-9 overflow-y-scroll vh-100 d-block">
+            <main class="col-md-8 col-lg-8 overflow-auto min-vh-100 d-block">
                 <div class="container">
                     <div class="row">
                         <div class="col d-flex p-4 justify-content-between border-bottom border-black">
@@ -130,7 +130,7 @@
                                     <th scope="col" class="table-cell">Nome</th>
                                     <th class="col"></th>
                                     <th scope="col" class="text-center collapse d-sm-table-cell">Prezzo</th>
-                                    <th scope="col" class="text-center collapse d-sm-table-cell">Stato</th>
+                                    <th scope="col" class="text-center collapse d-md-table-cell">Stato</th>
                                     <th scope="col" class="text-center d-sm-table-cell">Azioni</th>
                                 </tr>
                             </thead>
@@ -146,7 +146,7 @@
                                             Wide, Batteria a lunga durata</h6>
                                     </td>
                                     <td class="text-center d-none d-sm-table-cell">799.00$</td>
-                                    <td class="d-none d-sm-table-cell justify-content-center align-items-center p-3">
+                                    <td class="d-none d-md-table-cell justify-content-center align-items-center p-3">
                                         <i
                                             class="fa-solid fa-check d-block border rounded-circle border-success text-success p-2"></i>
                                     </td>
@@ -199,7 +199,7 @@
                                             Display Retina</h6>
                                     </td>
                                     <td class="text-center d-none d-sm-table-cell">1299.00$</td>
-                                    <td class="d-none d-sm-table-cell justify-content-center align-items-center p-3">
+                                    <td class="d-none d-md-table-cell justify-content-center align-items-center p-3">
                                         <i
                                             class="fa-solid fa-check border rounded-circle border-success text-success table-cell p-2"></i>
                                     </td>
@@ -251,11 +251,12 @@
                                             Misurazione ossigeno nel sangue, Display Always-On</h6>
                                     </td>
                                     <td class="text-center d-none d-sm-table-cell">429.00$</td>
-                                    <td class="d-none d-sm-table-cell justify-content-center align-items-center p-3">
+                                    <td class="d-none d-md-table-cell justify-content-center align-items-center p-3">
                                         <i
                                             class="fa-solid fa-check border rounded-circle border-success text-success d-block p-2"></i>
                                     </td>
-                                    <td><!-- Button trigger modal -->
+                                    <td>
+                                        <!-- Button trigger modal -->
                                         <div class="d-flex justify-content-center">
                                             <button type="button" class="btn btn-outline-primary mx-1"
                                                 data-bs-target="#exampleModal">
@@ -303,7 +304,7 @@
                                             Resistenza all'acqua e al sudores</h6>
                                     </td>
                                     <td class="text-center d-none d-sm-table-cell">279.00$</td>
-                                    <td class="d-none d-sm-table-cell justify-content-center align-items-center p-3">
+                                    <td class="d-none d-md-table-cell justify-content-center align-items-center p-3">
                                         <i
                                             class="fa-solid fa-check border rounded-circle border-success text-success d-block p-2"></i>
                                     </td>
@@ -356,7 +357,7 @@
                                             Tempi di caricamento rapidi, Supporto per giochi 4K</h6>
                                     </td>
                                     <td class="text-center d-none d-sm-table-cell">499.00$</td>
-                                    <td class="d-none d-sm-table-cell justify-content-center align-items-center p-3">
+                                    <td class="d-none d-md-table-cell justify-content-center align-items-center p-3">
                                         <i
                                             class="fa-solid fa-check border rounded-circle border-success text-success d-block p-2"></i>
                                     </td>
@@ -409,7 +410,7 @@
                                             aggiornamento 144hz, Tecnologia HDR</h6>
                                     </td>
                                     <td class="text-center d-none d-sm-table-cell">999.00$</td>
-                                    <td class="d-none d-sm-table-cell justify-content-center align-items-center p-3">
+                                    <td class="d-none d-md-table-cell justify-content-center align-items-center p-3">
                                         <i
                                             class="fa-solid fa-check border rounded-circle border-success text-success d-block p-2"></i>
                                     </td>
@@ -463,7 +464,7 @@
                                     </td>
                                     <td class="text-center d-none d-sm-table-cell">159.00$</td>
                                     <td
-                                        class="d-none d-sm-table-cell justify-content-center align-items-center p-3 table-cell">
+                                        class="d-none d-md-table-cell justify-content-center align-items-center p-3 table-cell">
                                         <i
                                             class="fa-solid fa-x border rounded-circle border-danger text-danger p-2"></i>
                                     </td>
@@ -516,7 +517,8 @@
                                             Velocità fino a 1800 Mbps, Gestione tramite App</h6>
                                     </td>
                                     <td class="text-center d-none d-sm-table-cell">199.00$</td>
-                                    <td class="d-none d-sm-table-cell justify-content-center align-items-center p-3 d-block">
+                                    <td
+                                        class="d-none d-md-table-cell justify-content-center align-items-center p-3 d-block">
                                         <i
                                             class="fa-solid fa-check border rounded-circle border-success text-success p-2"></i>
                                     </td>
@@ -569,7 +571,8 @@
                                             lettura fino a 7000 MB/s, Tecnologia PCle Gen4</h6>
                                     </td>
                                     <td class="text-center d-none d-sm-table-cell">229.00$</td>
-                                    <td class="d-none d-sm-table-cell justify-content-center align-items-center p-3 d-block">
+                                    <td
+                                        class="d-none d-md-table-cell justify-content-center align-items-center p-3 d-block">
                                         <i
                                             class="fa-solid fa-check border rounded-circle border-success text-success p-2"></i>
                                     </td>
@@ -622,7 +625,8 @@
                                             programmabili, Peso personalizzabile</h6>
                                     </td>
                                     <td class="text-center d-none d-sm-table-cell">79.99$</td>
-                                    <td class="d-none d-sm-table-cell justify-content-center align-items-center p-3 d-block">
+                                    <td
+                                        class="d-none d-md-table-cell justify-content-center align-items-center p-3 d-block">
                                         <i
                                             class="fa-solid fa-x border rounded-circle border-danger text-danger p-2"></i>
                                     </td>
