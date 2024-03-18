@@ -22,15 +22,15 @@
 <body>
 
     <header class="d-block d-sm-none">
-        <nav class="navbar bg-dark" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
             <!-- Container -->
             <div class="container">
                 <!-- brand -->
                 <a class="navbar-brand" href="#">BOOTSTRAP DASHBOARD</a>
 
                 <!-- Hamburger button -->
-                <button class="bg-transparent border-0" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="navbarNav" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars"></i>
                 </button>
@@ -41,12 +41,12 @@
     <div class="container-fluid">
         <div class="row">
             <!-- Sidebar -->
-            <div class="sidebar col-sm-4 col-lg-3 d-none d-sm-inline bg-dark vh-100" id="navbarSupportedContent">
+            <div class="sidebar col-sm-4 col-lg-3 d-none d-sm-inline bg-dark vh-100" id="navbarNav">
                 <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto  text-white text-decoration-none">
                     <svg class="bi pe-none me-2" width="40" height="32">
                         <use xlink:href="#bootstrap"></use>
                     </svg>
-                    <span class="fs-4 py-3">Bootstrap Dashboard</span>
+                    <span class="fs-4 p-2">Bootstrap Dashboard</span>
                 </a>
                 <hr class="text-white">
                 <ul class="nav nav-pills flex-column mb-auto">
@@ -126,9 +126,9 @@
                         </div>
                         <table>
                             <thead>
-                                <tr class="d-flex justify-content-end">
-                                    <th scope="col" class="d-block">Nome</th>
-                                    <th></th>
+                                <tr class="">
+                                    <th scope="col" class="table-cell">Nome</th>
+                                    <th class="col"></th>
                                     <th scope="col" class="text-center collapse d-sm-table-cell">Prezzo</th>
                                     <th scope="col" class="text-center collapse d-sm-table-cell">Stato</th>
                                     <th scope="col" class="text-center d-sm-table-cell">Azioni</th>
@@ -137,15 +137,18 @@
                             <tbody>
                                 <tr>
                                     <th class="col-1">
-                                        <img src="https://fastly.picsum.photos/id/550/200/200.jpg?hmac=1cWp9LPVpvHr7sCXaCMeMnsIHNCLfqPwnIkIA0GUzcM" alt="product-photo" width="55" height="55">
+                                        <img src="https://fastly.picsum.photos/id/550/200/200.jpg?hmac=1cWp9LPVpvHr7sCXaCMeMnsIHNCLfqPwnIkIA0GUzcM"
+                                            alt="product-photo" width="55" height="55">
                                     </th>
                                     <td class="col-11">
                                         <h4>Smartphone Samsung Galaxy S21</h4>
-                                        <h6 class="text-body-tertiary d-none d-xl-flex">Display AMOLED, Fotocamera Ultra Wide, Batteria a lunga durata</h6>
+                                        <h6 class="text-body-tertiary d-none d-xl-flex">Display AMOLED, Fotocamera Ultra
+                                            Wide, Batteria a lunga durata</h6>
                                     </td>
                                     <td class="text-center d-none d-sm-table-cell">799.00$</td>
-                                    <td class="d-none d-sm-flex justify-content-center align-items-center p-3">
-                                        <i class="fa-solid fa-check d-block border rounded-circle border-success text-success p-2"></i>
+                                    <td class="d-none d-sm-table-cell justify-content-center align-items-center p-3">
+                                        <i
+                                            class="fa-solid fa-check d-block border rounded-circle border-success text-success p-2"></i>
                                     </td>
                                     <td>
                                         <!-- Button trigger modal -->
@@ -166,7 +169,8 @@
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Elimina Prodotto
+                                                        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">
+                                                            Elimina Prodotto
                                                         </h1>
                                                     </div>
                                                     <div class="modal-body text-center">
@@ -175,7 +179,8 @@
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-primary"
                                                             data-bs-dismiss="modal">Si, continua</button>
-                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">
                                                             Annulla</button>
                                                     </div>
                                                 </div>
@@ -185,15 +190,18 @@
                                 </tr>
                                 <tr>
                                     <th class="col-1">
-                                        <img src="https://fastly.picsum.photos/id/985/200/200.jpg?hmac=-oC6YfQiGmm3Fyl5kVCag3-Z0VUHT0pRLIziGH1c4KU" alt="product-photo" width="55" height="55">
+                                        <img src="https://fastly.picsum.photos/id/985/200/200.jpg?hmac=-oC6YfQiGmm3Fyl5kVCag3-Z0VUHT0pRLIziGH1c4KU"
+                                            alt="product-photo" width="55" height="55">
                                     </th>
                                     <td scope="row" class="col-11">
                                         <h4>Apple MAcbook Pro 13"</h4>
-                                        <h6 class="text-body-tertiary d-none d-xl-flex">Processore M1, SSD ultraveloce, Display Retina</h6>
+                                        <h6 class="text-body-tertiary d-none d-xl-flex">Processore M1, SSD ultraveloce,
+                                            Display Retina</h6>
                                     </td>
                                     <td class="text-center d-none d-sm-table-cell">1299.00$</td>
-                                    <td class="d-none d-sm-flex justify-content-center align-items-center p-3">
-                                        <i class="fa-solid fa-check border rounded-circle border-success text-success table-cell p-2"></i>
+                                    <td class="d-none d-sm-table-cell justify-content-center align-items-center p-3">
+                                        <i
+                                            class="fa-solid fa-check border rounded-circle border-success text-success table-cell p-2"></i>
                                     </td>
                                     <td><!-- Button trigger modal -->
                                         <div class="d-flex justify-content-center">
@@ -213,7 +221,8 @@
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Elimina Prodotto
+                                                        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">
+                                                            Elimina Prodotto
                                                         </h1>
                                                     </div>
                                                     <div class="modal-body text-center">
@@ -222,7 +231,8 @@
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-primary"
                                                             data-bs-dismiss="modal">Si, continua</button>
-                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">
                                                             Annulla</button>
                                                     </div>
                                                 </div>
@@ -232,15 +242,18 @@
                                 </tr>
                                 <tr>
                                     <th class="col-1">
-                                        <img src="https://fastly.picsum.photos/id/510/200/200.jpg?hmac=1FeO80NQwx3Om4VsFCOgUaY6aIbQqaEDLKymcdZD1AQ" alt="product-photo" width="55" height="55">
+                                        <img src="https://fastly.picsum.photos/id/510/200/200.jpg?hmac=1FeO80NQwx3Om4VsFCOgUaY6aIbQqaEDLKymcdZD1AQ"
+                                            alt="product-photo" width="55" height="55">
                                     </th>
                                     <td scope="row" class="col-11">
                                         <h4>Smartwatch Apple Watch Series 6</h4>
-                                        <h6 class="text-body-tertiary d-none d-xl-flex">Monitoraggio Attività, Misurazione ossigeno nel sangue, Display Always-On</h6>
+                                        <h6 class="text-body-tertiary d-none d-xl-flex">Monitoraggio Attività,
+                                            Misurazione ossigeno nel sangue, Display Always-On</h6>
                                     </td>
                                     <td class="text-center d-none d-sm-table-cell">429.00$</td>
-                                    <td class="d-none d-sm-flex justify-content-center align-items-center p-3">
-                                        <i class="fa-solid fa-check border rounded-circle border-success text-success d-block p-2"></i>
+                                    <td class="d-none d-sm-table-cell justify-content-center align-items-center p-3">
+                                        <i
+                                            class="fa-solid fa-check border rounded-circle border-success text-success d-block p-2"></i>
                                     </td>
                                     <td><!-- Button trigger modal -->
                                         <div class="d-flex justify-content-center">
@@ -260,7 +273,8 @@
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Elimina Prodotto
+                                                        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">
+                                                            Elimina Prodotto
                                                         </h1>
                                                     </div>
                                                     <div class="modal-body text-center">
@@ -269,7 +283,8 @@
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-primary"
                                                             data-bs-dismiss="modal">Si, continua</button>
-                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">
                                                             Annulla</button>
                                                     </div>
                                                 </div>
@@ -279,15 +294,18 @@
                                 </tr>
                                 <tr>
                                     <th class="col-1">
-                                        <img src="https://fastly.picsum.photos/id/997/200/200.jpg?hmac=J9wMccIJgdwcAV_BlxcoN1N_oKWGt4Wb8EqkKqp-4gE" alt="product-photo" width="55" height="55">
+                                        <img src="https://fastly.picsum.photos/id/997/200/200.jpg?hmac=J9wMccIJgdwcAV_BlxcoN1N_oKWGt4Wb8EqkKqp-4gE"
+                                            alt="product-photo" width="55" height="55">
                                     </th>
                                     <td scope="row" class="col-11">
                                         <h4>Auricolari Wireless Apple Airpods Pro</h4>
-                                        <h6 class="text-body-tertiary d-none d-xl-flex">Cancellazione attiva del rumore, Resistenza all'acqua e al sudores</h6>
+                                        <h6 class="text-body-tertiary d-none d-xl-flex">Cancellazione attiva del rumore,
+                                            Resistenza all'acqua e al sudores</h6>
                                     </td>
                                     <td class="text-center d-none d-sm-table-cell">279.00$</td>
-                                    <td class="d-none d-sm-flex justify-content-center align-items-center p-3">
-                                        <i class="fa-solid fa-check border rounded-circle border-success text-success d-block p-2"></i>
+                                    <td class="d-none d-sm-table-cell justify-content-center align-items-center p-3">
+                                        <i
+                                            class="fa-solid fa-check border rounded-circle border-success text-success d-block p-2"></i>
                                     </td>
                                     <td>
                                         <!-- Button trigger modal -->
@@ -308,7 +326,8 @@
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Elimina Prodotto
+                                                        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">
+                                                            Elimina Prodotto
                                                         </h1>
                                                     </div>
                                                     <div class="modal-body text-center">
@@ -317,7 +336,8 @@
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-primary"
                                                             data-bs-dismiss="modal">Si, continua</button>
-                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">
                                                             Annulla</button>
                                                     </div>
                                                 </div>
@@ -327,15 +347,18 @@
                                 </tr>
                                 <tr>
                                     <th class="col-1">
-                                        <img src="https://fastly.picsum.photos/id/67/200/200.jpg?hmac=sN5XCCMqqmBvgDbYmAowWy2VToCkSYP5igDL_iRxK3M" alt="product-photo" width="55" height="55">
+                                        <img src="https://fastly.picsum.photos/id/67/200/200.jpg?hmac=sN5XCCMqqmBvgDbYmAowWy2VToCkSYP5igDL_iRxK3M"
+                                            alt="product-photo" width="55" height="55">
                                     </th>
                                     <td scope="row" class="col-11">
                                         <h4>Console Sony PlayStation 5</h4>
-                                        <h6 class="text-body-tertiary d-none d-xl-flex">Gaming ad alta definizione, Tempi di caricamento rapidi, Supporto per giochi 4K</h6>
+                                        <h6 class="text-body-tertiary d-none d-xl-flex">Gaming ad alta definizione,
+                                            Tempi di caricamento rapidi, Supporto per giochi 4K</h6>
                                     </td>
                                     <td class="text-center d-none d-sm-table-cell">499.00$</td>
-                                    <td class="d-none d-sm-flex justify-content-center align-items-center p-3">
-                                        <i class="fa-solid fa-check border rounded-circle border-success text-success d-block p-2"></i>
+                                    <td class="d-none d-sm-table-cell justify-content-center align-items-center p-3">
+                                        <i
+                                            class="fa-solid fa-check border rounded-circle border-success text-success d-block p-2"></i>
                                     </td>
                                     <td>
                                         <!-- Button trigger modal -->
@@ -356,7 +379,8 @@
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Elimina Prodotto
+                                                        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">
+                                                            Elimina Prodotto
                                                         </h1>
                                                     </div>
                                                     <div class="modal-body text-center">
@@ -365,7 +389,8 @@
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-primary"
                                                             data-bs-dismiss="modal">Si, continua</button>
-                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">
                                                             Annulla</button>
                                                     </div>
                                                 </div>
@@ -375,15 +400,18 @@
                                 </tr>
                                 <tr>
                                     <th class="col-1">
-                                        <img src="https://fastly.picsum.photos/id/558/200/200.jpg?hmac=tFHyh9KzOASFBog3Hpj6oSkBkBr90f67Yuejl0XnFDM" alt="product-photo" width="55" height="55">
+                                        <img src="https://fastly.picsum.photos/id/558/200/200.jpg?hmac=tFHyh9KzOASFBog3Hpj6oSkBkBr90f67Yuejl0XnFDM"
+                                            alt="product-photo" width="55" height="55">
                                     </th>
                                     <td scope="row" class="col-11">
                                         <h4>Monitor Gaming ASUS ROG Strix XG27UG</h4>
-                                        <h6 class="text-body-tertiary d-none d-xl-flex">Schermo 4K UHD, Frequenza di aggiornamento 144hz, Tecnologia HDR</h6>
+                                        <h6 class="text-body-tertiary d-none d-xl-flex">Schermo 4K UHD, Frequenza di
+                                            aggiornamento 144hz, Tecnologia HDR</h6>
                                     </td>
                                     <td class="text-center d-none d-sm-table-cell">999.00$</td>
-                                    <td class="d-none d-sm-flex justify-content-center align-items-center p-3">
-                                        <i class="fa-solid fa-check border rounded-circle border-success text-success d-block p-2"></i>
+                                    <td class="d-none d-sm-table-cell justify-content-center align-items-center p-3">
+                                        <i
+                                            class="fa-solid fa-check border rounded-circle border-success text-success d-block p-2"></i>
                                     </td>
                                     <td>
                                         <!-- Button trigger modal -->
@@ -404,7 +432,8 @@
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Elimina Prodotto
+                                                        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">
+                                                            Elimina Prodotto
                                                         </h1>
                                                     </div>
                                                     <div class="modal-body text-center">
@@ -413,7 +442,8 @@
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-primary"
                                                             data-bs-dismiss="modal">Si, continua</button>
-                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">
                                                             Annulla</button>
                                                     </div>
                                                 </div>
@@ -423,15 +453,19 @@
                                 </tr>
                                 <tr>
                                     <th class="col-1">
-                                        <img src="https://fastly.picsum.photos/id/952/200/200.jpg?hmac=6jMF0yOT214qb0hW6aUyexMo9flTRxyQbV8jYPcVolM" alt="product-photo" width="55" height="55">
+                                        <img src="https://fastly.picsum.photos/id/952/200/200.jpg?hmac=6jMF0yOT214qb0hW6aUyexMo9flTRxyQbV8jYPcVolM"
+                                            alt="product-photo" width="55" height="55">
                                     </th>
                                     <td scope="row" class="col-11">
                                         <h4>Stampante Multifunzione HP Laser Jet Pro MFP M28w</h4>
-                                        <h6 class="text-body-tertiary d-none d-xl-flex">Stampa, Scansiona, Copia, Connessione Wi-Fi</h6>
+                                        <h6 class="text-body-tertiary d-none d-xl-flex">Stampa, Scansiona, Copia,
+                                            Connessione Wi-Fi</h6>
                                     </td>
                                     <td class="text-center d-none d-sm-table-cell">159.00$</td>
-                                    <td class="d-none d-sm-flex justify-content-center align-items-center p-3 table-cell">
-                                        <i class="fa-solid fa-x border rounded-circle border-danger text-danger p-2"></i>
+                                    <td
+                                        class="d-none d-sm-table-cell justify-content-center align-items-center p-3 table-cell">
+                                        <i
+                                            class="fa-solid fa-x border rounded-circle border-danger text-danger p-2"></i>
                                     </td>
                                     <td>
                                         <!-- Button trigger modal -->
@@ -452,7 +486,8 @@
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Elimina Prodotto
+                                                        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">
+                                                            Elimina Prodotto
                                                         </h1>
                                                     </div>
                                                     <div class="modal-body text-center">
@@ -461,7 +496,8 @@
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-primary"
                                                             data-bs-dismiss="modal">Si, continua</button>
-                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">
                                                             Annulla</button>
                                                     </div>
                                                 </div>
@@ -471,15 +507,18 @@
                                 </tr>
                                 <tr>
                                     <th class="col-1">
-                                        <img src="https://fastly.picsum.photos/id/550/200/200.jpg?hmac=1cWp9LPVpvHr7sCXaCMeMnsIHNCLfqPwnIkIA0GUzcM" alt="product-photo" width="55" height="55">
+                                        <img src="https://fastly.picsum.photos/id/550/200/200.jpg?hmac=1cWp9LPVpvHr7sCXaCMeMnsIHNCLfqPwnIkIA0GUzcM"
+                                            alt="product-photo" width="55" height="55">
                                     </th>
                                     <td scope="row" class="col-11">
                                         <h4>Router Wifi Mesh TP-Link Deco X20</h4>
-                                        <h6 class="text-body-tertiary d-none d-xl-flex">Copertura fino a 560 mq, Velocità fino a 1800 Mbps, Gestione tramite App</h6>
+                                        <h6 class="text-body-tertiary d-none d-xl-flex">Copertura fino a 560 mq,
+                                            Velocità fino a 1800 Mbps, Gestione tramite App</h6>
                                     </td>
                                     <td class="text-center d-none d-sm-table-cell">199.00$</td>
-                                    <td class="d-none d-sm-flex justify-content-center align-items-center p-3 d-block">
-                                        <i class="fa-solid fa-check border rounded-circle border-success text-success p-2"></i>
+                                    <td class="d-none d-sm-table-cell justify-content-center align-items-center p-3 d-block">
+                                        <i
+                                            class="fa-solid fa-check border rounded-circle border-success text-success p-2"></i>
                                     </td>
                                     <td>
                                         <!-- Button trigger modal -->
@@ -500,7 +539,8 @@
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Elimina Prodotto
+                                                        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">
+                                                            Elimina Prodotto
                                                         </h1>
                                                     </div>
                                                     <div class="modal-body text-center">
@@ -509,7 +549,8 @@
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-primary"
                                                             data-bs-dismiss="modal">Si, continua</button>
-                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">
                                                             Annulla</button>
                                                     </div>
                                                 </div>
@@ -519,63 +560,18 @@
                                 </tr>
                                 <tr>
                                     <th class="col-1">
-                                        <img src="https://fastly.picsum.photos/id/550/200/200.jpg?hmac=1cWp9LPVpvHr7sCXaCMeMnsIHNCLfqPwnIkIA0GUzcM" alt="product-photo" width="55" height="55">
+                                        <img src="https://fastly.picsum.photos/id/550/200/200.jpg?hmac=1cWp9LPVpvHr7sCXaCMeMnsIHNCLfqPwnIkIA0GUzcM"
+                                            alt="product-photo" width="55" height="55">
                                     </th>
                                     <td scope="row" class="col-11">
                                         <h4>SSD NVMe Western Digital Black SN850</h4>
-                                        <h6 class="text-body-tertiary d-none d-xl-flex">Capacità 1TB, Velocità di lettura fino a 7000 MB/s, Tecnologia PCle Gen4</h6>
+                                        <h6 class="text-body-tertiary d-none d-xl-flex">Capacità 1TB, Velocità di
+                                            lettura fino a 7000 MB/s, Tecnologia PCle Gen4</h6>
                                     </td>
                                     <td class="text-center d-none d-sm-table-cell">229.00$</td>
-                                    <td class="d-none d-sm-flex justify-content-center align-items-center p-3 d-block">
-                                        <i class="fa-solid fa-check border rounded-circle border-success text-success p-2"></i>
-                                    </td>
-                                    <td>
-                                        <!-- Button trigger modal -->
-                                        <div class="d-flex justify-content-center">
-                                            <button type="button" class="btn btn-outline-primary mx-1" 
-                                                data-bs-target="#exampleModal">
-                                                <i class="fa-solid fa-pen "></i>
-                                            </button>
-                                            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal">
-                                                <i class="fa-solid fa-trash"></i>
-                                            </button>
-                                        </div>
-
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="exampleModal" tabindex="-1"
-                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Elimina Prodotto
-                                                        </h1>
-                                                    </div>
-                                                    <div class="modal-body text-center">
-                                                        L'eliminazione sarà irreversibile, sei sicuro?
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-primary"
-                                                            data-bs-dismiss="modal">Si, continua</button>
-                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                                            Annulla</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th class="col-1">
-                                        <img src="https://fastly.picsum.photos/id/550/200/200.jpg?hmac=1cWp9LPVpvHr7sCXaCMeMnsIHNCLfqPwnIkIA0GUzcM" alt="product-photo" width="55" height="55">
-                                    </th>
-                                    <td scope="row" class="col-11">
-                                        <h4>Mouse Gaming Logitech G502 Hero</h4>
-                                        <h6 class="text-body-tertiary d-none d-xl-flex">Sensore HERO 25K, 11 pulsanti programmabili, Peso personalizzabile</h6>
-                                    </td>
-                                    <td class="text-center d-none d-sm-table-cell">79.99$</td>
-                                    <td class="d-none d-sm-flex justify-content-center align-items-center p-3 d-block">
-                                        <i class="fa-solid fa-x border rounded-circle border-danger text-danger p-2"></i>
+                                    <td class="d-none d-sm-table-cell justify-content-center align-items-center p-3 d-block">
+                                        <i
+                                            class="fa-solid fa-check border rounded-circle border-success text-success p-2"></i>
                                     </td>
                                     <td>
                                         <!-- Button trigger modal -->
@@ -596,7 +592,8 @@
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Elimina Prodotto
+                                                        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">
+                                                            Elimina Prodotto
                                                         </h1>
                                                     </div>
                                                     <div class="modal-body text-center">
@@ -605,7 +602,61 @@
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-primary"
                                                             data-bs-dismiss="modal">Si, continua</button>
-                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">
+                                                            Annulla</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="col-1">
+                                        <img src="https://fastly.picsum.photos/id/550/200/200.jpg?hmac=1cWp9LPVpvHr7sCXaCMeMnsIHNCLfqPwnIkIA0GUzcM"
+                                            alt="product-photo" width="55" height="55">
+                                    </th>
+                                    <td scope="row" class="col-11">
+                                        <h4>Mouse Gaming Logitech G502 Hero</h4>
+                                        <h6 class="text-body-tertiary d-none d-xl-flex">Sensore HERO 25K, 11 pulsanti
+                                            programmabili, Peso personalizzabile</h6>
+                                    </td>
+                                    <td class="text-center d-none d-sm-table-cell">79.99$</td>
+                                    <td class="d-none d-sm-table-cell justify-content-center align-items-center p-3 d-block">
+                                        <i
+                                            class="fa-solid fa-x border rounded-circle border-danger text-danger p-2"></i>
+                                    </td>
+                                    <td>
+                                        <!-- Button trigger modal -->
+                                        <div class="d-flex justify-content-center">
+                                            <button type="button" class="btn btn-outline-primary mx-1"
+                                                data-bs-target="#exampleModal">
+                                                <i class="fa-solid fa-pen "></i>
+                                            </button>
+                                            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </button>
+                                        </div>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">
+                                                            Elimina Prodotto
+                                                        </h1>
+                                                    </div>
+                                                    <div class="modal-body text-center">
+                                                        L'eliminazione sarà irreversibile, sei sicuro?
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary"
+                                                            data-bs-dismiss="modal">Si, continua</button>
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">
                                                             Annulla</button>
                                                     </div>
                                                 </div>
